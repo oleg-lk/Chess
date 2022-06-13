@@ -37,7 +37,7 @@ public class Pawn extends ChessPiece{
         else{
             if ( (dLine==-1) ||
                  ((dLine==-2) && (line==6))) {
-                return chessBoard.isValidPath("no color", line, column, toLine, toColumn);
+                return chessBoard.isValidPath(null, line, column, toLine, toColumn);
             }
         }
         return false;
